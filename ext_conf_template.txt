@@ -1,0 +1,14 @@
+# cat=ftpd; type=string; label=IP adress on which FTPD must listen.
+listen_addr = 127.0.0.1
+# cat=ftpd; type=int; label=Port FTPD must listen on.
+listen_port = 21
+# cat=ftpd; type=int; label=Low Port FTPD connects clients on.
+low_port = 15000
+# cat=ftpd; type=int; label=High Port FTPD connects clients on.
+high_port = 16000
+# cat=ftpd; type=int; label=Max simultaneous connections.
+max_conn = 10
+# cat=ftpd; type=int; label=Max simultaneous connections per IP address.
+max_conn_per_ip = 3
+# cat=ftpd; type=boolean; label=Natural File Names. If this is set file names will be that of uploaded files instead of T3-UID-TITLE
+natural_file_names = 0

@@ -1,0 +1,21 @@
+
+tt_content.text.30 < tt_content.uploads.20
+tt_content.text.30=USER_INT
+tt_content.text.30.userFunc = tx_cbywebdav_renderFile->render_Uploads
+tt_content.text.30.includeLibs=typo3conf/ext/cby_webdav/class.tx_cbywebdav_renderFile.php
+tt_content.text.30.tableParams_2.border = 
+tt_content.text.30.stdWrap.fieldRequired=tx_cbywebdav_ftpfile
+tt_content.text.30.stdWrap.wrap=<b>Fichier(s) &agrave;  t&eacute;l&eacute;charger :</b><br/> |
+tt_content.text.30.tableParams_2.cellspacing = 0
+tt_content.text.30.tableParams_2.cellpadding = 0
+
+tx_cbywebdav < tt_content.uploads.20
+tx_cbywebdav=USER_INT
+tx_cbywebdav.userFunc = tx_cbywebdav_renderFtpFiles->render_ftpUploads
+tx_cbywebdav.includeLibs=typo3conf/ext/cby_webdav/class.tx_cbywebdav_renderFile.php
+tx_cbywebdav.tableParams_2.border = 
+tx_cbywebdav.stdWrap.fieldRequired=tx_cbywebdav_ftpfile
+tx_cbywebdav.stdWrap.wrap=<b>Fichier(s) &agrave;  t&eacute;l&eacute;charger :</b><br/> |
+tx_cbywebdav.tableParams_2.cellspacing = 0
+tx_cbywebdav.tableParams_2.cellpadding = 0
+tt_content.stdWrap.postCObject < tx_cbywebdav
